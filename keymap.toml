@@ -3,6 +3,9 @@
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
 [mgr]
+prepend_keymap = [
+    { on = [ "g", "g" ],       run = "plugin git-files", desc = "Show Git file changes" },
+]
 
 keymap = [
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selection, or cancel search" },
